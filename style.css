@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+
+}
+
+body nav h1{
+    background-color: rgb(134, 131, 131);
+    
+    padding: 1rem;
+    width: 20vw;
+    margin: auto;
+    margin-top: 1rem;
+}
+body nav h1::before{
+    content: '';
+}
+
+
+body nav h1 a{
+    color: white;
+    text-decoration: none;
+}
+
+
+h1:hover{
+    background-color: rgba(9, 9, 124, 0.5);
+    
+    
+}
+
+body nav h2{
+    background-color: lightgray;
+    color: white;
+    padding: 0.5rem;
+    margin: auto;
+    display: block;
+    width: 20vw;
+
+}
+
+body nav h2:hover{
+    background-color: cyan;
+}
+
+body nav h2 a{
+    text-decoration: none;
+}
+
+body nav h2 a::before{
+    margin: auto;
+    content: '';
+
+}
+
