@@ -1,0 +1,151 @@
+@import "theme.css";
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin-top: 4rem;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    background-image:linear-gradient(to right, rgb(227, 229, 238), rgb(42, 162, 218));
+}
+
+.navbar1{
+    margin-left: 0.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.navbar2{
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    background-color: white;
+    height: 4.5rem;
+    width: 25rem;
+    padding: 0.5rem;
+    justify-content: center;
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+    background-color: lightgray;
+}
+
+.navbar2:hover{
+    /* cursor: pointer; */
+    background-color: aquamarine;
+    font-family: 'Macondo', cursive;
+}
+
+.navbar2 ul{
+    display: flex;
+}
+
+.navbar2 ul li {
+    list-style-type: none;
+    text-decoration: none;
+    height: 3rem;
+    line-height: 3rem;
+    color: black;
+    cursor: pointer;
+    /* transition: all; */
+}
+
+.navbar2 ul li:hover {
+    
+    
+    transition: 2ms;
+    transform: translateX(15px);
+    transition: 1s;
+    /* font-family: 'Macondo', cursive; */
+    
+}
+
+.navbar2 ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    height: 10rem;
+    line-height: rem;
+    margin: 1rem;
+    font-size: x-large;
+
+}
+
+
+.navbar3{
+    display: flex;
+}
+
+.navbar3 div a {
+    padding: 0.2rem;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+    color: black;
+}
+
+.navbar3 div:hover{
+    transform: scale(1.5,1.5);
+    transition: 0.5s;
+}
+
+@media (max-width: 800px){
+    .container{
+        height: 50px;
+    }
+    .navbar2{
+        height: 150px;
+        width: 130px;
+        /* flex-direction: column; */
+
+    }
+    .navbar2 ul{
+        flex-direction: column;
+        height: 150px;
+        width: 130px;
+    }
+    .navbar3 i{
+        font-size:1.5rem;
+    }
+}
+@media (max-width:500px){
+    .container{
+        height: 30px;
+    }
+    .navbar1 i{
+        font-size: 1rem;
+        display: flex;
+    }
+    .navbar2{
+        height: 80px;
+        width: 90px;
+        /* flex-direction: column; */
+    }
+    .navbar2 ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        width: 90px;
+    }
+    .navbar2 ul li {
+        align-items: center;
+        height: 20px;
+        line-height: 20px;
+    }
+
+    .navbar2 ul li a{
+        font-size: x-small;
+        
+    }
+
+    
+    .navbar3 i{
+        font-size:1rem;
+        margin-bottom: 1rem;
+    }
+}
+
