@@ -92,7 +92,7 @@
     transition: 0.5s;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 800px){
     .container{
         height: 50px;
     }
